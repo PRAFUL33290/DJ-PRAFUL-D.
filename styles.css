@@ -40,10 +40,8 @@ body {
   position: absolute;
   inset: 0;
   opacity: 0.14;
-  background-image:
-    radial-gradient(circle at center, transparent 0 45px, rgba(255, 214, 119, 0.35) 46px 47px, transparent 48px),
-    radial-gradient(circle at center, transparent 0 95px, rgba(177, 132, 255, 0.2) 96px 97px, transparent 98px);
-  background-size: 320px 320px;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l2 10 10-2-6 8 8 6-10 2 2 10-8-6-6 8-2-10-10 2 6-8-8-6 10-2-2-10 8 6z' fill='rgba(255,214,119,0.5)' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 150px 150px;
 }
 
 .container {
@@ -99,7 +97,7 @@ nav a:hover {
   align-items: center;
   background:
     linear-gradient(120deg, rgba(7, 3, 15, 0.9), rgba(7, 3, 15, 0.45)),
-    url("https://images.unsplash.com/photo-1571266028243-754cf6f3f6e6?auto=format&fit=crop&w=1400&q=80") center/cover;
+    url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=80") center/cover;
 }
 
 .hero-overlay {
@@ -214,7 +212,7 @@ h1 {
   min-height: 310px;
   background:
     linear-gradient(180deg, rgba(7, 3, 15, 0.15), rgba(7, 3, 15, 0.82)),
-    url("https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=1200&q=80") center/cover;
 }
 
 .about-content,
@@ -240,6 +238,25 @@ ul {
 
 .cards-4 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.base-price {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(239, 199, 94, 0.4);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(239, 199, 94, 0.05), rgba(17, 10, 31, 0.9));
+  color: var(--gold-soft);
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(239, 199, 94, 0.05);
+}
+.base-price p {
+  margin: 0;
+}
+.base-price strong {
+  color: var(--gold);
+  font-size: 1.4rem;
 }
 
 .center {
